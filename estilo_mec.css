@@ -1,0 +1,233 @@
+/* estilos para el header con flex */
+header{
+  background-color: #f8f8f8; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #999
+  
+}
+
+.encabezado{
+
+  text-align: center;
+  padding: 10px;
+    
+}
+
+#logo {
+
+    width: 15%; 
+ 
+}
+#contacto{
+    width: 15%; 
+    font-size: 12px;
+   
+}
+
+#titulo {
+    width: 70%; 
+
+}
+
+.cuerpo {
+  display: flex;
+  height: 600px; /* Puedes ajustar el alto total */
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+#titulos {
+  text-align: center;
+}
+
+#contImagene {
+  flex: 1;
+  height: 100%;
+}
+
+#contImagene img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#infE {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#parrafoE {
+  flex: 1;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+#listaE {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#listaE dt {
+  font-weight: bold;
+  color: #023061;
+  margin-top: 10px;
+}
+
+#listaE dd {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+#Botones {
+  
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente (si hay altura definida) */
+  gap: 10px;               /* espacio entre los botones */
+  padding: 10px;           /* separación de los bordes */
+  flex-wrap: wrap;         /* permite que se acomoden en varias líneas si no hay espacio */
+}
+
+.bootes {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #023061;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bootes:hover {
+  background-color: #66b3ff;  /* Azul claro al pasar el cursor */
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 0;
+}
+
+#formulario {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#formulario h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+
+select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccd1d9;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccd1d9;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.boton-enviar {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #3498db;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #2980b9;
+}
+
+footer {
+  background-color: #f8f8f8; /* Color suave para pie de página */
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+#h2footer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#pfooter {
+  font-style: italic;
+  color: #666;
+}
+
+#ptelefono,
+#pdireccion {
+  font-size: 13px;
+}
