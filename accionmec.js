@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
-            // Si llegamos aquí, todos los campos están llenos
+            // Si llegamos aquí, todos los campos están llenos claramente
             let mensaje = "¿Deseas confirmar el envío con los siguientes datos?\n\n";
             for (const campo in datos) {
                 mensaje += `${campo}: ${datos[campo]}\n`;
