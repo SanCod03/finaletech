@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nuestra Tienda</title>
+    <link rel="stylesheet" href="estilo_tienda.css" />
+</head>
+<body>
+    <header>
+        <div class="encabezado" id="logo">
+            <img src="img/logosokd.png" alt="Logo CS Automotriz" />
+        </div>
+        <div class="encabezado" id="titulo">
+            <h1 id="nombre">CS Automotriz</h1>
+            <h2 id="eslogan">Trabajamos con precisión para que manejes con confianza.</h2>
+        </div>
+        <div class="encabezado" id="contacto">
+            <h3>Contáctanos</h3>
+            <p>Teléfono: 3152250459</p>
+            <p>Dirección: Diagonal 32, número 15-30</p>
+            <p>San Pedro Alejandrino, Santa Marta, Colombia</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Monitores de Temperatura</h2>
+            <p>Pensando en la seguridad y el bienestar de nuestros clientes, ofrecemos una variedad de monitores de temperatura vehiculares para diferentes necesidades.</p>
+
+            <div class="productos">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <h3>Monitor Temperatura y Nivel de Batería</h3>
+                    <div class="producto-contenido">
+                        <div class="producto-galeria">
+                            <div class="imgprincipal">
+                                <img src="img/s1.png" alt="Monitor 1">
+                            </div>
+                            <div class="secundarias">
+                                <img src="img/s2.png" alt="Monitor 1 alt">
+                                <img src="img/s3.png" alt="Monitor 1 alt">
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <ul>
+                                <li>Monitorea la temperatura del vehículo</li>
+                                <li>Controla el nivel de batería</li>
+                                <li>Sensor propio para lecturas precisas</li>
+                                <li>Compatible con la mayoría de vehículos</li>
+                            </ul>
+                            <p class="precio">$120.000</p>
+                            <div class="producto-boton">
+                                <button id="add1" type="button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <h3>Monitor Digital OBD2 Reflectivo</h3>
+                    <div class="producto-contenido">
+                        <div class="producto-galeria">
+                            <div class="imgprincipal">
+                                <img src="img/ref.png" alt="Monitor 2">
+                            </div>
+                            <div class="secundarias">
+                                <img src="img/ref2.png" alt="Monitor 2 alt">
+                                <img src="img/ref3.png" alt="Monitor 2 alt">
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <ul>
+                                <li>Monitorea datos en vivo como velocidad, RPM y temperatura</li>
+                                <li>Refleja los datos en el parabrisas</li>
+                                <li>Fácil instalación y configuración</li>
+                                <li>Compatible con modos OBD2 estándar</li>
+                            </ul>
+                            <p class="precio">$160.000</p>
+                            <div class="producto-boton">
+                                <button id="add2" type="button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <h3>Monitor Digital OBD2 con Pantalla</h3>
+                    <div class="producto-contenido">
+                        <div class="producto-galeria">
+                            <div class="imgprincipal">
+                                <img src="img/obd2.png" alt="Monitor 3">
+                            </div>
+                            <div class="secundarias">
+                                <img src="img/obd2s.png" alt="Monitor 3 alt">
+                                <img src="img/obd2t.png" alt="Monitor 3 alt">
+                            </div>
+                        </div>
+                        <div class="producto-info">
+                            <ul>
+                                <li>Datos en vivo: velocidad, RPM, temperatura</li>
+                                <li>Pantalla integrada para visualización directa</li>
+                                <li>Brillo automático</li>
+                                <li>Compatible con modos OBD2 estándar</li>
+                            </ul>
+                            <p class="precio">$140.000</p>
+                            <div class="producto-boton">
+                                <button id="add3" type="button">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrito -->
+  <section>
+    <h2>Carrito de Compras</h2>
+
+    <div id="contenedor-carrito">
+        <div class="card-carrito" id="se1">
+            <p id="item1">0</p>
+            <p>Monitor Temperatura y Nivel de Batería</p>
+            <p id="mult1"></p>
+            <button id="plus1">+</button>
+            <button id="minus1">-</button>
+            <button id="delete1">Eliminar</button>
+        </div>
+        <div class="card-carrito" id="se2">
+            <p id="item2">0</p>
+            <p>Monitor Digital OBD2 Reflectivo</p>
+            <p id="mult2"></p>
+            <button id="plus2">+</button>
+            <button id="minus2">-</button>
+            <button id="delete2">Eliminar</button>
+        </div>
+        <div class="card-carrito" id="se3">
+            <p id="item3">0</p>
+            <p>Monitor Digital OBD2 con Pantalla</p>
+            <p id="mult3"></p>
+            <button id="plus3">+</button>
+            <button id="minus3">-</button>
+            <button id="delete3">Eliminar</button>
+        </div>
+    </div>
+
+    <!-- Mensaje beneficios -->
+    <p id="mensajec" class="mensaje-beneficio">
+        🎁 ¡Gracias por tu compra! Aprovecha el envío gratis y descuentos por cantidad. 🚚💸
+    </p>
+
+    <h3>Total</h3>
+
+    <table class="tabla-resumen">
+        <tr>
+            <td>Subtotal:</td>
+            <td id="subtotalp">$0</td>
+        </tr>
+        <tr>
+            <td>Gastos de envío local:</td>
+            <td id="envio">$12.500</td>
+        </tr>
+        <tr>
+            <td>Descuentos:</td>
+            <td><span id="descuentos">$0</span></td>
+        </tr>
+        <tr>
+            <th>Total:</th>
+            <th id="totalp">$0</th>
+        </tr>
+    </table>
+
+    <button id="comprar">Comprar</button>
+    <button id="vaciar">Vaciar carrito</button>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nuestra Tienda</p>
+    </footer>
+
+    <!-- Formulario oculto para datos de tarjeta -->
+<div id="formulario-compra" style="display: none; position: fixed; top: 10%; left: 30%; width: 40%; background: #fff; padding: 20px; border: 2px solid #007BFF; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.2); z-index: 9999;">
+    <h3>Datos de Tarjeta</h3>
+    <label>Número de Tarjeta:</label>
+    <input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+    <label>Nombre en Tarjeta:</label>
+    <input type="text" placeholder="Nombre Completo" style="width: 100%; padding: 10px; margin-bottom: 10px;"><br>
+    <label>Vencimiento:</label>
+    <input type="text" placeholder="MM/AA" style="width: 48%; padding: 10px; margin-bottom: 10px;">
+    <label style="margin-left: 4%;">CVV:</label>
+    <input type="text" placeholder="123" style="width: 20%; padding: 10px; margin-bottom: 10px;"><br>
+
+    <div style="text-align: center; margin-top: 15px;">
+        <button id="confirmar" style="padding: 10px 20px; background: green; color: white; border: none; border-radius: 8px; cursor: pointer;">Confirmar</button>
+        <button id="cancelar" style="padding: 10px 20px; background: gray; color: white; border: none; border-radius: 8px; cursor: pointer; margin-left: 10px;">Cancelar</button>
+    </div>
+</div>
+
+<script src="tienda.js"></script>
+</body>
+</html>
