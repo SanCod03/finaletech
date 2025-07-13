@@ -176,3 +176,28 @@ footer {
 .botones-carrito button:hover {
   background-color: #007BFF;
 }
+
+#Botones {
+  
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente (si hay altura definida) */
+  gap: 10px;               /* espacio entre los botones */
+  padding: 10px;           /* separación de los bordes */
+  flex-wrap: wrap;         /* permite que se acomoden en varias líneas si no hay espacio */
+}
+
+.bootes {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #023061;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.bootes:hover {
+  background-color: #66b3ff;  /* Azul claro al pasar el cursor */
+}

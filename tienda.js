@@ -135,4 +135,42 @@ if (totalProductos < 3) {
     mensajeEl.textContent = "🎉 ¡Envío gratis y 10% de descuento aplicados!";
 }
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+  const rutas = {
+    bElectricidad: "electricidad.html",
+    bMecanica: "mecanica.html",
+    btienda: "tienda.html",
+    bEquipo: "equipo.html",
+    bcontacto: "contacto.html"
+  };
+
+  Object.entries(rutas).forEach(([id, url]) => {
+    const boton = document.getElementById(id);
+    if (boton) {
+      boton.addEventListener("click", () => {
+        window.location.href = url;
+      });
+    }
+  });
+});
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const rutas = {
+    bElectricidad: "electricidad.html",
+    bMecanica: "mecanica.html",
+    btienda: "tienda.html",
+    bEquipo: "equipo.html",
+    bcontacto: "contacto.html"
+  };
+
+  Object.entries(rutas).forEach(([id, url]) => {
+    const boton = document.getElementById(id);
+    if (boton) {
+      boton.addEventListener("click", () => {
+        window.location.href = url;
+      });
+    }
+  });
 });
